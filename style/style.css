@@ -1,11 +1,35 @@
-@import url('https://font.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+@import url("https://font.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
 
-*
-{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', san-serif;
+    font-family: "Poppins", san-serif;
 }
 
-body
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, #0085ff, #ff1458);
+}
+
+.board {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 50px;
+}
+
+.board .dropBox{
+    position: relative;
+    width: 140px;
+    height: 140px;
+    border-left: 4px solid #fff;
+    border-bottom: 4px solid #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
